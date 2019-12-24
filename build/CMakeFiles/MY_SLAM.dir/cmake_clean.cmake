@@ -2,6 +2,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/MY_SLAM.dir/src/main.cc.o"
   "CMakeFiles/MY_SLAM.dir/src/SystemHandler.cc.o"
   "CMakeFiles/MY_SLAM.dir/src/Tracker.cc.o"
+  "CMakeFiles/MY_SLAM.dir/src/Frame.cc.o"
+  "CMakeFiles/MY_SLAM.dir/src/ORBextractor.cc.o"
   "MY_SLAM.pdb"
   "MY_SLAM"
 )

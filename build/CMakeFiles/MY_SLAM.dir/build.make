@@ -129,11 +129,61 @@ CMakeFiles/MY_SLAM.dir/src/Tracker.cc.o.provides: CMakeFiles/MY_SLAM.dir/src/Tra
 CMakeFiles/MY_SLAM.dir/src/Tracker.cc.o.provides.build: CMakeFiles/MY_SLAM.dir/src/Tracker.cc.o
 
 
+CMakeFiles/MY_SLAM.dir/src/Frame.cc.o: CMakeFiles/MY_SLAM.dir/flags.make
+CMakeFiles/MY_SLAM.dir/src/Frame.cc.o: ../src/Frame.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/cur_project/slam_practice/myslam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/MY_SLAM.dir/src/Frame.cc.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MY_SLAM.dir/src/Frame.cc.o -c /media/cur_project/slam_practice/myslam/src/Frame.cc
+
+CMakeFiles/MY_SLAM.dir/src/Frame.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MY_SLAM.dir/src/Frame.cc.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/cur_project/slam_practice/myslam/src/Frame.cc > CMakeFiles/MY_SLAM.dir/src/Frame.cc.i
+
+CMakeFiles/MY_SLAM.dir/src/Frame.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MY_SLAM.dir/src/Frame.cc.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/cur_project/slam_practice/myslam/src/Frame.cc -o CMakeFiles/MY_SLAM.dir/src/Frame.cc.s
+
+CMakeFiles/MY_SLAM.dir/src/Frame.cc.o.requires:
+
+.PHONY : CMakeFiles/MY_SLAM.dir/src/Frame.cc.o.requires
+
+CMakeFiles/MY_SLAM.dir/src/Frame.cc.o.provides: CMakeFiles/MY_SLAM.dir/src/Frame.cc.o.requires
+	$(MAKE) -f CMakeFiles/MY_SLAM.dir/build.make CMakeFiles/MY_SLAM.dir/src/Frame.cc.o.provides.build
+.PHONY : CMakeFiles/MY_SLAM.dir/src/Frame.cc.o.provides
+
+CMakeFiles/MY_SLAM.dir/src/Frame.cc.o.provides.build: CMakeFiles/MY_SLAM.dir/src/Frame.cc.o
+
+
+CMakeFiles/MY_SLAM.dir/src/ORBextractor.cc.o: CMakeFiles/MY_SLAM.dir/flags.make
+CMakeFiles/MY_SLAM.dir/src/ORBextractor.cc.o: ../src/ORBextractor.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/media/cur_project/slam_practice/myslam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/MY_SLAM.dir/src/ORBextractor.cc.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MY_SLAM.dir/src/ORBextractor.cc.o -c /media/cur_project/slam_practice/myslam/src/ORBextractor.cc
+
+CMakeFiles/MY_SLAM.dir/src/ORBextractor.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MY_SLAM.dir/src/ORBextractor.cc.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /media/cur_project/slam_practice/myslam/src/ORBextractor.cc > CMakeFiles/MY_SLAM.dir/src/ORBextractor.cc.i
+
+CMakeFiles/MY_SLAM.dir/src/ORBextractor.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MY_SLAM.dir/src/ORBextractor.cc.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /media/cur_project/slam_practice/myslam/src/ORBextractor.cc -o CMakeFiles/MY_SLAM.dir/src/ORBextractor.cc.s
+
+CMakeFiles/MY_SLAM.dir/src/ORBextractor.cc.o.requires:
+
+.PHONY : CMakeFiles/MY_SLAM.dir/src/ORBextractor.cc.o.requires
+
+CMakeFiles/MY_SLAM.dir/src/ORBextractor.cc.o.provides: CMakeFiles/MY_SLAM.dir/src/ORBextractor.cc.o.requires
+	$(MAKE) -f CMakeFiles/MY_SLAM.dir/build.make CMakeFiles/MY_SLAM.dir/src/ORBextractor.cc.o.provides.build
+.PHONY : CMakeFiles/MY_SLAM.dir/src/ORBextractor.cc.o.provides
+
+CMakeFiles/MY_SLAM.dir/src/ORBextractor.cc.o.provides.build: CMakeFiles/MY_SLAM.dir/src/ORBextractor.cc.o
+
+
 # Object files for target MY_SLAM
 MY_SLAM_OBJECTS = \
 "CMakeFiles/MY_SLAM.dir/src/main.cc.o" \
 "CMakeFiles/MY_SLAM.dir/src/SystemHandler.cc.o" \
-"CMakeFiles/MY_SLAM.dir/src/Tracker.cc.o"
+"CMakeFiles/MY_SLAM.dir/src/Tracker.cc.o" \
+"CMakeFiles/MY_SLAM.dir/src/Frame.cc.o" \
+"CMakeFiles/MY_SLAM.dir/src/ORBextractor.cc.o"
 
 # External object files for target MY_SLAM
 MY_SLAM_EXTERNAL_OBJECTS =
@@ -141,6 +191,8 @@ MY_SLAM_EXTERNAL_OBJECTS =
 MY_SLAM: CMakeFiles/MY_SLAM.dir/src/main.cc.o
 MY_SLAM: CMakeFiles/MY_SLAM.dir/src/SystemHandler.cc.o
 MY_SLAM: CMakeFiles/MY_SLAM.dir/src/Tracker.cc.o
+MY_SLAM: CMakeFiles/MY_SLAM.dir/src/Frame.cc.o
+MY_SLAM: CMakeFiles/MY_SLAM.dir/src/ORBextractor.cc.o
 MY_SLAM: CMakeFiles/MY_SLAM.dir/build.make
 MY_SLAM: /usr/local/lib/libopencv_ml.so.3.4.1
 MY_SLAM: /usr/local/lib/libopencv_videostab.so.3.4.1
@@ -160,7 +212,7 @@ MY_SLAM: /usr/local/lib/libopencv_video.so.3.4.1
 MY_SLAM: /usr/local/lib/libopencv_imgproc.so.3.4.1
 MY_SLAM: /usr/local/lib/libopencv_core.so.3.4.1
 MY_SLAM: CMakeFiles/MY_SLAM.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/media/cur_project/slam_practice/myslam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable MY_SLAM"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/media/cur_project/slam_practice/myslam/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable MY_SLAM"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/MY_SLAM.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -171,6 +223,8 @@ CMakeFiles/MY_SLAM.dir/build: MY_SLAM
 CMakeFiles/MY_SLAM.dir/requires: CMakeFiles/MY_SLAM.dir/src/main.cc.o.requires
 CMakeFiles/MY_SLAM.dir/requires: CMakeFiles/MY_SLAM.dir/src/SystemHandler.cc.o.requires
 CMakeFiles/MY_SLAM.dir/requires: CMakeFiles/MY_SLAM.dir/src/Tracker.cc.o.requires
+CMakeFiles/MY_SLAM.dir/requires: CMakeFiles/MY_SLAM.dir/src/Frame.cc.o.requires
+CMakeFiles/MY_SLAM.dir/requires: CMakeFiles/MY_SLAM.dir/src/ORBextractor.cc.o.requires
 
 .PHONY : CMakeFiles/MY_SLAM.dir/requires
 

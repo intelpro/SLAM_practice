@@ -1,6 +1,9 @@
-#include <Tracker.h> 
+#include<Tracker.h> 
+#include<Frame.h>
+#include<opencv2/opencv.hpp>
 
 using namespace std; 
+using namespace cv;
 
 namespace MY_SLAM{
     Tracker::Tracker(const string& strSettingPath)
@@ -17,7 +20,14 @@ namespace MY_SLAM{
         K.at<float>(0,2) = cx; 
         K.at<float>(1,3) = cy;
         K.copyTo(mK);
-        cout << mK << endl;
+    }
+
+    void Tracker::StereoProcessing(const cv::Mat& left_image, const cv::Mat& right_image)
+    {
+        mImGray = left_image;
+        cv::Mat imGrayRight = right_image;
+        cvtColor(mImGray, mImGray, CV_BGR2GRAY);
+        cvtColor(imGrayRight, imGrayRight, CV_BGR2GRAY);
     }
 }
 

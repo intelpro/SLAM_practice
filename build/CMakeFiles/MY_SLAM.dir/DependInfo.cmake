@@ -4,6 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/media/cur_project/slam_practice/myslam/src/Frame.cc" "/media/cur_project/slam_practice/myslam/build/CMakeFiles/MY_SLAM.dir/src/Frame.cc.o"
+  "/media/cur_project/slam_practice/myslam/src/ORBextractor.cc" "/media/cur_project/slam_practice/myslam/build/CMakeFiles/MY_SLAM.dir/src/ORBextractor.cc.o"
   "/media/cur_project/slam_practice/myslam/src/SystemHandler.cc" "/media/cur_project/slam_practice/myslam/build/CMakeFiles/MY_SLAM.dir/src/SystemHandler.cc.o"
   "/media/cur_project/slam_practice/myslam/src/Tracker.cc" "/media/cur_project/slam_practice/myslam/build/CMakeFiles/MY_SLAM.dir/src/Tracker.cc.o"
   "/media/cur_project/slam_practice/myslam/src/main.cc" "/media/cur_project/slam_practice/myslam/build/CMakeFiles/MY_SLAM.dir/src/main.cc.o"

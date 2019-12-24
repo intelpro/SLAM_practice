@@ -11,6 +11,11 @@ namespace MY_SLAM
     {
         public:
             Tracker(const std::string& strSettingPath);
+            void StereoProcessing(const cv::Mat& left_image, const cv::Mat& right_image);
+
+        public:
+            cv::Mat mImGray;
+            
         private:
             float fx; 
             float fy; 

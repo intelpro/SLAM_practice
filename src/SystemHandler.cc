@@ -13,4 +13,9 @@ namespace MY_SLAM
         }
         pTracker = new Tracker(strSettingFile);
     }
+
+    void SystemHandler::Tracking(const cv::Mat& left_image, const cv::Mat& right_image)
+    {
+        pTracker->StereoProcessing(left_image, right_image);
+    }
 }

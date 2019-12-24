@@ -123,6 +123,60 @@ MY_SLAM/fast:
 	$(MAKE) -f CMakeFiles/MY_SLAM.dir/build.make CMakeFiles/MY_SLAM.dir/build
 .PHONY : MY_SLAM/fast
 
+src/Frame.o: src/Frame.cc.o
+
+.PHONY : src/Frame.o
+
+# target to build an object file
+src/Frame.cc.o:
+	$(MAKE) -f CMakeFiles/MY_SLAM.dir/build.make CMakeFiles/MY_SLAM.dir/src/Frame.cc.o
+.PHONY : src/Frame.cc.o
+
+src/Frame.i: src/Frame.cc.i
+
+.PHONY : src/Frame.i
+
+# target to preprocess a source file
+src/Frame.cc.i:
+	$(MAKE) -f CMakeFiles/MY_SLAM.dir/build.make CMakeFiles/MY_SLAM.dir/src/Frame.cc.i
+.PHONY : src/Frame.cc.i
+
+src/Frame.s: src/Frame.cc.s
+
+.PHONY : src/Frame.s
+
+# target to generate assembly for a file
+src/Frame.cc.s:
+	$(MAKE) -f CMakeFiles/MY_SLAM.dir/build.make CMakeFiles/MY_SLAM.dir/src/Frame.cc.s
+.PHONY : src/Frame.cc.s
+
+src/ORBextractor.o: src/ORBextractor.cc.o
+
+.PHONY : src/ORBextractor.o
+
+# target to build an object file
+src/ORBextractor.cc.o:
+	$(MAKE) -f CMakeFiles/MY_SLAM.dir/build.make CMakeFiles/MY_SLAM.dir/src/ORBextractor.cc.o
+.PHONY : src/ORBextractor.cc.o
+
+src/ORBextractor.i: src/ORBextractor.cc.i
+
+.PHONY : src/ORBextractor.i
+
+# target to preprocess a source file
+src/ORBextractor.cc.i:
+	$(MAKE) -f CMakeFiles/MY_SLAM.dir/build.make CMakeFiles/MY_SLAM.dir/src/ORBextractor.cc.i
+.PHONY : src/ORBextractor.cc.i
+
+src/ORBextractor.s: src/ORBextractor.cc.s
+
+.PHONY : src/ORBextractor.s
+
+# target to generate assembly for a file
+src/ORBextractor.cc.s:
+	$(MAKE) -f CMakeFiles/MY_SLAM.dir/build.make CMakeFiles/MY_SLAM.dir/src/ORBextractor.cc.s
+.PHONY : src/ORBextractor.cc.s
+
 src/SystemHandler.o: src/SystemHandler.cc.o
 
 .PHONY : src/SystemHandler.o
@@ -213,6 +267,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... MY_SLAM"
+	@echo "... src/Frame.o"
+	@echo "... src/Frame.i"
+	@echo "... src/Frame.s"
+	@echo "... src/ORBextractor.o"
+	@echo "... src/ORBextractor.i"
+	@echo "... src/ORBextractor.s"
 	@echo "... src/SystemHandler.o"
 	@echo "... src/SystemHandler.i"
 	@echo "... src/SystemHandler.s"

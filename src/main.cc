@@ -3,6 +3,7 @@
 #include<opencv2/core/core.hpp>
 #include<opencv2/opencv.hpp>
 #include<SystemHandler.h>
+
 using namespace std; 
 
 void LoadImages(const string &PathToSequence, vector<cv::String> &LeftStringVector,
@@ -25,6 +26,7 @@ int main(int argc, char** argv)
     {
         cv::Mat imLeft = cv::imread(LeftStringVector[i], CV_LOAD_IMAGE_UNCHANGED);
         cv::Mat imRight = cv::imread(RightStringVector[i], CV_LOAD_IMAGE_UNCHANGED);
+        SLAM.Tracking(imLeft, imRight);
     }
 }
 
