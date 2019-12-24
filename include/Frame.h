@@ -10,6 +10,8 @@ namespace MY_SLAM
             Frame(const cv::Mat &imLeft, const cv::Mat &imRight, ORBextractor* extractorLeft, ORBextractor* extractorRight, 
                   cv::Mat &K, cv::Mat &distCoef, const float &bf, const float &thDepth);
             void ExtractORB(int lr_flag, const cv::Mat& imLeft);
+            void UndistortKeyPoints();
+            void StereoMatch();
 
         public: 
             ORBextractor* mpORBextractorLeft;
@@ -23,12 +25,27 @@ namespace MY_SLAM
             std::vector<float> mvLevelSigma2;
             std::vector<float> mvInvLevelSigma2;
 
+            // number of keypoints 
+            int N_keypoints;
             // vector of keypoints 
             std::vector<cv::KeyPoint> mvKeys;
             std::vector<cv::KeyPoint> mvKeysRight;
             // vector of descriptor
             cv::Mat mDescriptor;
             cv::Mat mDescriptorRight;
+            // undistorted keypoints
+            std::vector<cv::KeyPoint> mvKeysUn;
+            // Calibration matrix
+            cv::Mat mK;
+            static float fx;
+            static float fy;
+            static float cx;
+            static float invfx;
+            static float invfy;
+            cv::Mat mDistCoef;
+            // stereo matching 
+            std::vector<float> mvuRight;
+            std::vector<float> mvDepth;
     };
 }
 #endif
