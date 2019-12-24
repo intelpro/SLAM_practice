@@ -1,3 +1,0 @@
-/media/cur_project/slam_practice/myslam/build/CMakeFiles/rebuild_cache.dir
-/media/cur_project/slam_practice/myslam/build/CMakeFiles/edit_cache.dir
-/media/cur_project/slam_practice/myslam/build/CMakeFiles/MY_SLAM.dir
